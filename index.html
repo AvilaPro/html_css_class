@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <button id="btnWhatsapp">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+    </button>
     <header>
         <div class="iblock elhead" id="h1">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill-rule="evenodd" height="32" width="32">
@@ -27,14 +30,15 @@
         <nav class="iblock elhead" id="h2">
             <div class="iblock elnav" id="el1nav">store</div>
             <div class="iblock elnav elsecnav">distribucion</div>
-            <div class="iblock elnav elsecnav">asistencia</div>
+            <div class="iblock elnav elsecnav" style="visibility: hidden;">asistencia</div>
             <div class="iblock elnav elsecnav">unreal engine</div>
         </nav>
         <div class="iblock elhead" id="h3">
             <button id="btnh3" class="iblock elh3" style="margin: 0;">
                 Descargar
             </button>
-            <div class="iblock elh3" style="border-radius: 20px; background: #303034; padding: 2px 4px 0; box-sizing: border-box; color: #D3D3D7;">
+            <div class="iblock elh3"
+                style="border-radius: 20px; background: #303034; padding: 2px 4px 0; box-sizing: border-box; color: #D3D3D7;">
                 <span class="material-symbols-outlined">
                     person
                 </span>
@@ -46,11 +50,100 @@
             </div>
         </div>
     </header>
-    <div id="subHeader"></div>
     <main>
-        <section id="carousel1"></section>
+        <div id="subHeader" style="position: sticky; top: 0;">
+            <input id="inputSub" type="text" placeholder="Buscar en la tienda">
+            <p class="iblock pSubHeader">Descubrir</p>
+            <p class="iblock pSubHeader" style="display: none;">Explorar</p>
+            <p class="iblock pSubHeader">Noticias</p>
+        </div>
+        <section id="carousel1">
+            <article id="art1Car">
+                <div id="divArt1Car">
+                    <div id="descripcionCarousel">
+                        <img src="https://cdn2.unrealengine.com/egs-horizon-forbidden-west-carousel-logo-350x137-4761b0e32379.png"
+                            alt="logoJuego" height="80px">
+                        <p>Fecha</p>
+                        <p>Descripcion</p>
+                        <p>Precio XX$</p>
+                        <button class="btnCar btnCarWhite">Comprar Ahora</button>
+                        <button class="btnCar btnCarTrans">Agregar a la lista de deseos</button>
+                    </div>
+                </div>
+            </article>
+            <article id="art2Car">
+                <div class="selectorArt">
+                    <div class="miniaturaArt">
+                        <img class="imgMiniatura"
+                            src="https://cdn2.unrealengine.com/egs-horizon-forbidden-west-carousel-thumb-1200x1600-011a41336cf9.jpg?h=128&quality=medium&resize=1&w=96"
+                            alt="">
+                    </div>
+                    <div class="tituloArt">
+                        Horizon: Forbidden West
+                    </div>
+                </div>
+                <div class="selectorArt">
+                    <div class="miniaturaArt">
+                        <img class="imgMiniatura"
+                            src="https://cdn2.unrealengine.com/egs-prince-of-persia-lost-crown-carousel-thumb-1200x1600-f1da6429caec.jpg?h=128&quality=medium&resize=1&w=96"
+                            alt="">
+                    </div>
+                    <div class="tituloArt">
+                        Prince of Persia: The Lost Crown
+                    </div>
+                </div>
+                <div class="selectorArt">
+                    <div class="miniaturaArt">
+                        <img class="imgMiniatura"
+                            src="https://cdn2.unrealengine.com/egs-prince-of-persia-lost-crown-carousel-thumb-1200x1600-f1da6429caec.jpg?h=128&quality=medium&resize=1&w=96"
+                            alt="">
+                    </div>
+                    <div class="tituloArt">
+                        Prince of Persia: The Lost Crown
+                    </div>
+                </div>
+                <div class="selectorArt">
+                    <div class="miniaturaArt">
+                        <img class="imgMiniatura"
+                            src="https://cdn2.unrealengine.com/egs-prince-of-persia-lost-crown-carousel-thumb-1200x1600-f1da6429caec.jpg?h=128&quality=medium&resize=1&w=96"
+                            alt="">
+                    </div>
+                    <div class="tituloArt">
+                        Prince of Persia: The Lost Crown
+                    </div>
+                </div>
+                <div class="selectorArt">
+                    <div class="miniaturaArt">
+                        <img class="imgMiniatura"
+                            src="https://cdn2.unrealengine.com/egs-prince-of-persia-lost-crown-carousel-thumb-1200x1600-f1da6429caec.jpg?h=128&quality=medium&resize=1&w=96"
+                            alt="">
+                    </div>
+                    <div class="tituloArt">
+                        Prince of Persia: The Lost Crown
+                    </div>
+                </div>
+                <div class="selectorArt">
+                    <div class="miniaturaArt">
+                        <img class="imgMiniatura"
+                            src="https://cdn2.unrealengine.com/egs-prince-of-persia-lost-crown-carousel-thumb-1200x1600-f1da6429caec.jpg?h=128&quality=medium&resize=1&w=96"
+                            alt="">
+                    </div>
+                    <div class="tituloArt">
+                        Prince of Persia: The Lost Crown
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        <section id="descuentos" style="height: 1500px; background: yellow;">
+
+        </section>
     </main>
     <footer></footer>
+
+    <!-- Scripts de ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
