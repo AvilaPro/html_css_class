@@ -1,0 +1,62 @@
+*{
+    font-family: 'Segoe UI';
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 3px lightgray;
+    padding: 0 1%;
+}
+header > div:first-child{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+header > div:last-child{
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+    align-items: center;
+}
+.btnHeader{
+    background: transparent;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+#loginBtn{
+    background-color: #E1E4E7;
+}
+.registerBtn{
+    background-color: #7A33DF;
+    color: white;
+}
+
+/*Skills*/
+#skills{
+    margin-top: 100px;
+}
+.articleSkills{
+    padding: 50px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    width: 150px;
+    aspect-ratio: 1/1;
+    display: inline-block;
+    margin: 0 50px;
+    float: left;
+}

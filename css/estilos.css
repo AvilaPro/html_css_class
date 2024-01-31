@@ -1,0 +1,8 @@
+/*Estilos globales del sitio*/
+*{
+    font-family: 'Segoe UI';
+}
+
+#ciudad{
+    color: white !important;
+}
