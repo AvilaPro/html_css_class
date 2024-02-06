@@ -220,3 +220,82 @@ main{
     padding: 15px 10px;
 }
 /*FIN CAROUSEL*/
+/*
+*Descuentos
+*/
+#descs{
+    height: 65vh;
+}
+#descs > div:first-child{
+    height: 10%;
+    padding: 5% 0;
+    box-sizing: border-box;
+}
+#descs > div:last-child{
+    height: 90%;
+}
+#descs > div:last-child h3{
+    display: inline-block;
+    float: left;
+    margin: 0;
+}
+#descs > div:last-child > article{
+    height: 100%;
+    width: 19%;
+    margin-right: 0.5rem;
+    display: inline-block;
+    float: left;
+}
+#descs > div:last-child > article img{
+    height: 70%;
+    width: 100%;
+}
+#descs article > p{
+    margin: 10px 0;
+}
+#descs article p:first-of-type{
+    color: #7F94A5;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+#descs article p:last-of-type{
+    text-overflow: ellipsis;
+    font-size: 1.15em;
+    height: 1.3em;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+}
+#descs article div:last-child > div{
+    display: inline-block;
+    width: 30%;
+    background: #26BBFF;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 0.8em;
+    margin-right: 15px;
+}
+#descs article div:last-child > div ~ span{
+    color: #7F94A5;
+}
+#descs article div:last-child > div + span{
+    text-decoration: line-through;
+}
+/* Fin de Descuentos */
+/* Ofertas */
+#ofer{
+    height: 50vh;
+}
+#ofer > div {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    margin-right: 2em;
+}
+#ofer > div img{
+    height: 50%;
+    width: 100%;
+}
