@@ -287,6 +287,8 @@ main{
 /* Ofertas */
 #ofer{
     height: 50vh;
+    position: relative;
+    top: 10vh;
 }
 #ofer > div {
     width: 30%;
@@ -295,7 +297,70 @@ main{
     float: left;
     margin-right: 2em;
 }
-#ofer > div img{
+#ofer > div > div:first-child{
     height: 50%;
     width: 100%;
+    border-radius: 15px;
+    filter: grayscale(1);
+    /* border: solid white 1px; */
+    transition: all 5s cubic-bezier(.51,1.52,.29,.05) 0s;
+}
+#ofer > div > div:first-child:hover{
+    transform: rotate(-355deg) scale(1.25) translate(75px, -55px);
+    border-radius: .25px 2em 0 .75rem;
+    background-image: url("https://cdn2.unrealengine.com/egs-prince-of-persia-lost-crown-carousel-desktop-1920x1080-c7ae57efc8ab.jpg?h=720&quality=medium&resize=1&w=1280");
+    filter: grayscale(0);
+
+}
+#ofer > div:nth-child(1) > div:first-child{
+    background-image: url("https://cdn2.unrealengine.com/es-egs-dotw-fall-guys-arcade-classics-pack-breaker-1920x1080-427a352f6240.jpg?h=480&quality=medium&resize=1&w=854");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ofer > div:nth-child(2) > div:first-child{
+    background-image: url("https://cdn2.unrealengine.com/es-egs-dotw-the-sims-4-for-rent-expansion-pack-breaker-1920x1080-f526890eb5b5.jpg?h=480&quality=medium&resize=1&w=854");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ofer > div:nth-child(3) > div:first-child{
+    background-image: url("https://cdn2.unrealengine.com/es-sales-specials-dotw-breaker-asset-1920x1080-5eeaaa823081.jpg?h=480&quality=medium&resize=1&w=854");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/* #ofer > div > div:first-child > div{
+    background: #ffffff82;
+    display: none;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+} */
+#ofer > div > div:first-child:hover > div{
+    display: block;
+    cursor: pointer;
+}
+#ofer > div > div:first-child > div > div{
+    background: black;
+    color: white;
+    border: solid 2px white;
+    border-radius: 25px;
+    display: none;
+    width: 17px;
+    height: 17px;
+    float: right;
+    margin: 8px 8px 0 0;
+    text-align: center;
+    padding: 0.25px 0 0.5px 0;
+    font-weight: bold;
+    /* box-sizing: border-box; */
+}
+#ofer > div > div:first-child:hover > div > div{
+    display: block;
+}
+
+/*
+*Footer
+*/
+footer{
+    height: 20vh;
+    background: black;
 }
