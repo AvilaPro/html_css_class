@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="stylesheet" href="./css/canva.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./img/logoAvilapro.jpg" width="70px" alt="">
+            <nav>
+                <a href="#skills">Skills</a>
+                <a href="./index.html">Mi sitio anterior</a>
+                <a href="https://www.cadif1.com" target="_blank">Educacion</a>
+                <div>...</div>
+            </nav>
+        </div>
+        <div>
+            <div>
+                <ion-icon name="search"></ion-icon>
+            </div>
+            <div>
+                <ion-icon name="help"></ion-icon>
+            </div>
+            <button class="btnHeader" id="loginBtn"><a href="./canva.html">Ir a Home</a></button>
+            <button class="btnHeader registerBtn"><a href="./register.html">Registrate</a></button>
+        </div>
+    </header>
+    <h1 style="text-align: center;">Inicia Sesion</h1>
+    <div class="formulario">
+        <form action="" name="login" method="GET">
+            <label for="username">Username</label>
+            <input name="username" id="username" type="text" required>
+            <label for="clave">Password</label>
+            <input name="password" id="clave" type="password" required>
+            <div>
+                <input type="checkbox" name="politicas" id="politicas" required>
+                <label for="politicas">He leído y acepto las políticas de privacidad</label>
+            </div>
+            <input class="btnForm" type="submit" value="Iniciar Sesion">
+        </form>
+    </div>
+</body>
+</html>

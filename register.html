@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="stylesheet" href="./css/canva.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./img/logoAvilapro.jpg" width="70px" alt="">
+            <nav>
+                <a href="#skills">Skills</a>
+                <a href="./index.html">Mi sitio anterior</a>
+                <a href="https://www.cadif1.com" target="_blank">Educacion</a>
+                <div>...</div>
+            </nav>
+        </div>
+        <div>
+            <div>
+                <ion-icon name="search"></ion-icon>
+            </div>
+            <div>
+                <ion-icon name="help"></ion-icon>
+            </div>
+            <button class="btnHeader" id="loginBtn"><a href="./login.html">Iniciar Sesion</a></button>
+            <button class="btnHeader registerBtn"><a href="./canva.html">Ir a Home</a></button>
+        </div>
+    </header>
+    <h1 style="text-align: center;">Regístrate</h1>
+    <div class="formulario">
+        <form action="" name="login" method="GET">
+            <label for="name">Nombre</label>
+            <input name="name" id="name" type="text" required>
+            <label for="lastname">Apellido</label>
+            <input name="lastname" id="lastname" type="text" maxlength="14" required>
+            <label for="cedula">Cedula</label>
+            <input type="text" id="cedula" required maxlength="8">
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" id="correo" required>
+            <label for="telefono">Teléfono</label>
+            <input type="number" id="telefono" maxlength="11">
+            <p>Ciudad</p>
+            <select name="ciudad" id="ciudad">
+                <option value="">Seleccionar</option>
+                <option value="1">Barquisimeto</option>
+                <option value="2">Caracas</option>
+                <option value="3">Valencia</option>
+                <option value="4">Maracay</option>
+                <option value="5">San Felipe</option>
+            </select>
+            <p>Sexo:</p>
+            <div>
+                <input type="radio" name="Sexo" value="1" id="s1">
+                <label for="s1">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="Sexo" value="2" id="s2">
+                <label for="s2">Femenino</label>
+            </div>
+            <p>Preferencias</p>
+            <div>
+                <input type="checkbox" name="p1" id="p1">
+                <label for="p1">Algo</label>
+                <input type="checkbox" name="p2" id="p2">
+                <label for="p2">Otra cosa</label>
+                <input type="checkbox" name="p3" id="p3">
+                <label for="p3">Adicional</label>
+            </div>
+            <input style="margin-top: 15px;" type="reset" class="btnForm" value="Limpiar campos">
+            <input style="margin-top: 15px;" class="btnForm" type="submit" value="Iniciar Sesion">
+        </form>
+    </div>
+</body>
+</html>
