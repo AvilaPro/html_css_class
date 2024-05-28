@@ -1,0 +1,71 @@
+/*Reglas de estilo globales*/
+*{
+    font-family: 'Segoe UI';
+}
+body{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 5px 8px;
+}
+.i-b{
+    display: inline-block;
+}
+/*Reglas generales semanticas*/
+/*HEADER*/
+header{
+    width: 29vw;
+    height: 90vh; 
+    margin-right: 0.25vw;
+    float: left;
+}
+.font-header{
+    font-size: 18px;
+    color: rgb(161, 160, 160);
+    font-weight: 600;
+}
+nav{
+    height: 25%;
+    width: 100%;
+    background: #121212;
+    margin-bottom: 2%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.navItems{
+    height: 30%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+}
+#spotifyIcon{
+    filter: invert(100%);
+}
+#biblioteca{
+    height: 68%;
+    width: 100%;
+    background: #121212;
+}
+/*FIN HEADER*/
+/*MAIN*/
+main{
+    width: 68vw;
+    height: 90vh;
+    background: lightgoldenrodyellow;
+    float: right;
+}
+#control-login{
+    height: 9%;
+    width: 100%;
+    background: lime;
+}
+#feed{
+    height: 91%;
+    width: 100%;
+    background: lightsalmon;
+}
+/*FIN MAIN*/
+/*elemento call to action*/
+#callToAction{
+    width: 100%;
+    height: 10vh;
+}
