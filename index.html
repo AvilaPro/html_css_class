@@ -36,9 +36,45 @@
         </div>
     </header>
     <main class="i-b">
-        <div id="control-login"></div>
-        <section id="feed">
-            <section id="artistas"></section>
+        <div id="control-login">
+            <button class="controlBtn">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="controlBtn">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+            <button style="float: right;" id="btnIniciar">Iniciar Sesion</button>
+            <button style="float: right;" id="btnRegister">Registrarse</button>
+        </div>
+        <section id="feed" style="height: 1000px;">
+            <section id="artistas">
+                <h1 style="margin: 0; position: relative; z-index: 10;">Artistas populares</h1>
+                <div class="cardArtista">
+                    <img class="imgArtista" src="https://i.scdn.co/image/ab67616100005174e82c62cc8cf019aecfd71ee8" alt="">
+                    <p class="nombreArtista">Feid</p>
+                    <p>Artista</p>
+                </div>
+                <div class="cardArtista">
+                    <img class="imgArtista" src="https://i.scdn.co/image/ab676161000051749ad50e478a469448c6f369df" alt="">
+                    <p class="nombreArtista">BAD BUNNY</p>
+                    <p>Artista</p>
+                </div>
+                <div class="cardArtista">
+                    <img class="imgArtista" src="https://i.scdn.co/image/ab6761610000517400bfcedce3845ae969c8277a" alt="">
+                    <p class="nombreArtista">KAROL G</p>
+                    <p>Artista</p>
+                </div>
+                <div class="cardArtista">
+                    <img class="imgArtista" src="https://i.scdn.co/image/ab67616100005174a4b011e4e1692bd031b4425d" alt="">
+                    <p class="nombreArtista">Rauw Alejandro</p>
+                    <p>Artista</p>
+                </div>
+                <div class="cardArtista">
+                    <img class="imgArtista" src="https://i.scdn.co/image/ab676161000051749e35c3c5de877f99a8f6192f" alt="">
+                    <p class="nombreArtista">Myke Towers</p>
+                    <p>Artista</p>
+                </div>
+            </section>
             <section id="albumes"></section>
             <section id="emisoras"></section>
             <section id="listas"></section>
@@ -46,6 +82,10 @@
         </section>
     </main>
     <div id="callToAction"></div>
+
+    <button id="btnwapp">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+    </button>
 
     <!-- Scripts de ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

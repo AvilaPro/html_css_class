@@ -18,6 +18,8 @@ header{
     height: 90vh; 
     margin-right: 0.25vw;
     float: left;
+    position: fixed;
+    top: 0;
 }
 .font-header{
     font-size: 18px;
@@ -48,6 +50,7 @@ nav{
 /*FIN HEADER*/
 /*MAIN*/
 main{
+    overflow: auto;
     width: 68vw;
     height: 90vh;
     background: lightgoldenrodyellow;
@@ -56,16 +59,104 @@ main{
 #control-login{
     height: 9%;
     width: 100%;
-    background: lime;
+    background: #121212;
+    padding: 0.25% 3%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+.controlBtn{
+    background: #000000;
+    border-radius: 50px;
+    padding: 2px 7px;
+    color: #999898;
+    font-size: 1.8em;
+    border: none;
+}
+#btnRegister{
+    color: #999898;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 21px;
+    position: relative;
+    top: 3px;
+}
+#btnRegister:hover{
+    color: #d6d4d4;
+    cursor: pointer;
+    visibility: hidden;
+}
+#btnIniciar{
+    background: white;
+    color: black;
+    padding: 10px 21px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+}
+#btnIniciar:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    display: none;
 }
 #feed{
     height: 91%;
     width: 100%;
-    background: lightsalmon;
+    background: #121212;
+    padding-top: 50px;
+}
+#artistas{
+    padding: 5px;
+    box-sizing: border-box;
+}
+.cardArtista{
+    display: inline-block;
+    height: 30vh;
+    width: 18%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.cardArtista:hover{
+    background-image: linear-gradient(to bottom, #121212, #161616, #1a1a1a, #1d1d1d, #212121);
+}
+.cardArtista > p{
+    margin: 0;
+}
+.imgArtista{
+    width: 98%;
+    aspect-ratio: 1/1;
+    border-radius: 75px;
+}
+.nombreArtista{
+    font-weight: bold;
 }
 /*FIN MAIN*/
 /*elemento call to action*/
 #callToAction{
+    /* display: none; */
     width: 100%;
     height: 10vh;
+    position: fixed;
+    bottom: 0;
+    background-image: linear-gradient(to right, #ad2a98, #a638a2, #9f43ac, #964db4, #8d56bc, #865fc4, #7e68cc, #7670d3, #6e7bdd, #6586e5, #5b90ed, #519af4);
+}
+
+/*boton de whatsapp*/
+#btnwapp{
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background-color: #2dda30;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 50px;
+}
+#btnwapp:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
