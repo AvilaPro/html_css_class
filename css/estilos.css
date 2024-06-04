@@ -14,7 +14,7 @@ body{
 /*Reglas generales semanticas*/
 /*HEADER*/
 header{
-    width: 29vw;
+    width: 24vw;
     height: 90vh; 
     margin-right: 0.25vw;
     float: left;
@@ -51,7 +51,7 @@ nav{
 /*MAIN*/
 main{
     overflow: auto;
-    width: 68vw;
+    width: 74vw;
     height: 90vh;
     background: lightgoldenrodyellow;
     float: right;
@@ -135,6 +135,110 @@ main{
 .nombreArtista{
     font-weight: bold;
 }
+/*albumes*/
+#albumes{
+    height: 45vh;
+}
+#albumes > div:first-child{
+    height: 20%;
+    position: relative;
+}
+#albumes > div:first-child > h2{
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+#albumes > div:first-child > a{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #999898;
+    font-weight: bold;
+    text-decoration: none;
+}
+#albumes > div:first-child > a:hover{
+    text-decoration: underline;
+}
+#albumes > div:last-child{
+    height: 80%;
+    padding: 0 1px 0 5px;
+}
+#albumes > div:last-child > div{
+    height: 100%;
+    width: 19%;
+    display: inline-block;
+    margin: 0 1px;
+    text-align: center;
+    position: relative;
+}
+#albumes > div:last-child > div:hover{
+    background-color: #212121;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#albumes > div:last-child > div > img{
+    width: 92%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+#albumes > div:last-child > div > h5{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 11px 0;
+    font-size: 0.95em;
+    text-align: start;
+}
+#albumes > div:last-child > div:nth-child(1) > h5{
+    text-transform: uppercase;
+}
+#albumes > div:last-child > div:nth-child(2) > h5{
+    text-transform: capitalize;
+}
+#albumes > div:last-child > div:nth-child(3) > h5{
+    text-transform: lowercase;
+}
+#albumes > div:last-child > div:nth-child(4) > h5{
+    text-transform: uppercase;
+}
+#albumes > div:last-child > div:nth-child(5) > h5{
+    text-transform: uppercase;
+}
+#albumes > div:last-child > div > p{
+    color: #999898;
+    text-transform: capitalize;
+    margin: 8px 0;
+    text-align: start;
+}
+#albumes > div:last-child > div:first-of-type > p{
+    text-transform: uppercase;
+}
+#albumes > div:last-child > div > button{
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+    border-radius: 50px;
+    width: 40px;
+    aspect-ratio: 1/1;
+    border: none;
+    transition: all 2s ease 0s;
+    background: transparent;
+}
+#albumes > div:last-child > div > button ion-icon{
+    color: transparent;
+    transition: all 2s ease 0s;
+}
+#albumes > div:last-child > div:hover > button{
+    transform: translate(0px, -10px);
+    background: #2dda30;
+}
+#albumes > div:last-child > div:hover > button ion-icon{
+    color: black;
+}
+
+
 /*FIN MAIN*/
 /*elemento call to action*/
 #callToAction{
