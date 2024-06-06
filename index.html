@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis clases de HTML5 y CSS3</title>
-</head>
-<body>
-    <h1>Repositorio para subir en distintas ramas los avances de las clase de HTML5 y CSS3</h1>
+    <title>Mi pagina web</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <style>
+        /* h1{
+            color: blue;
+        } */
+        h4 {
+            background-color: #C6FCEC;
+            color: #003293;
+        }
 
-    <h4>Desarrollado por Avilapro</h4>
+        hr {
+            background-color: #00ddb9;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <hr>
+        <hr>
+        <nav>
+            <a href="#redes">Mis redes sociales</a>
+            <a href="./pages/login.html">Iniciar Sesion</a>
+            <a href="./pages/register.html">Registrate</a>
+        </nav>
+        <figure>
+            <img src="./img/eduardoPerfil.png" width="150" height="150" alt="Foto perfil Eduardo">
+        </figure>
+        <h1 id="nombreTitulo">Eduardo L. Mejias Avila</h1>
+        <hr>
+        <hr>
+    </header>
+    <main>
+        <h2 id="apodoTitulo">Avilapro</h2>
+        <h3>Programador de aplicaciones</h3>
+        <div style="text-align: center;">
+            <video src="./videos/4253156-uhd_3840_2160_25fps.mp4" autoplay loop controls width="70%" height="70%"></video>
+        </div>
+        <section>
+            <h4>Mis conocimientos</h4>
+            <article>
+                <p>Soy ingeniero en Telecomunicaciones graduado de la Universidad Fermin Toro.</p>
+            </article>
+            <article>
+                <p>Soy desarrollador de aplicaciones web y moviles desde el año 2017.</p>
+            </article>
+        </section>
+        <section>
+            <h4 style="background-color: #C6FCEC; color: #003293;">Mis habilidades en la programacion</h4>
+            <article>
+                <h5>Domino las siguientes tecnologías y lenguajes</h5>
+                <ul id="tecnologias" class="gorditas-regular">
+                    <li>HTML</li>
+                    <li>
+                        CSS
+                        <ul>
+                            <li>Box Model</li>
+                            <li>Flex</li>
+                            <li>Grid</li>
+                            <li>Respoosive Design</li>
+                            <li>Transform</li>
+                            <li>Transitions</li>
+                            <li>Animations</li>
+                        </ul>
+                    </li>
+                    <li>Python</li>
+                    <li>Javascript</li>
+                </ul>
+
+            </article>
+        </section>
+        <section>
+            <h4>Trabajos realizados</h4>
+            <ol id="trabajos" class="aladin-regular">
+                <li>Shavuot Lab</li>
+                <li>Sitio web: Industrias Flamante, c.a.</li>
+                <li>Sitio web en Shopify: Direct Appliances</li>
+                <li>Pagina web para "cliente 1". Visitar el boceto: <a href="./pages/cliente1.html">en el siguiente enlace</a></li>
+            </ol>
+        </section>
+        <section>
+            <h4>Practica de tabla</h4>
+            <table id="tablaEjemplo" style="margin: 0 auto">
+                <tr>
+                    <td>1</td>
+                    <td>10</td>
+                    <td>21 de Noviembre de 2017</td>
+                    <td>9 de Enero de 2018</td>
+                    <td rowspan="3">Josh Schwartz y Stephanie Savage</td>
+                    <td rowspan="3">Finalizada</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>13</td>
+                    <td colspan="2">21 de Diciembre de 2018</td>
+                </tr>
+                <tr>    
+                    <td>3</td>
+                    <td>10</td>
+                    <td colspan="2">13 de Diciembre de 2019</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <!-- <audio src="./audios/better-day-186374.mp3" autoplay loop controls></audio> -->
+        <h4 id="redes">Redes sociales</h4>
+        <ul id="linksFooter">
+            <li class="linkRedes"><a class="anchorRedes" href="" target="_blank">Facebook</a></li>
+            <li class="linkRedes"><a a class="anchorRedes" href="https://www.instagram.com/avilapro_/related_profiles/"  target="_blank">Instagram</a></li>
+            <li class="linkRedes"><a class="anchorRedes" href="" target="_blank">X</a></li>
+            <li class="linkRedes"><a class="anchorRedes" href="" target="_blank">TikTok</a></li>
+            <li class="linkRedes"><a class="anchorRedes" href="" target="_blank">YouTube</a></li>
+        </ul>
+    </footer>
 </body>
+
 </html>

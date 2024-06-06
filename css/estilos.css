@@ -1,0 +1,126 @@
+/*Importaciones de archivos externos*/
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Gorditas:wght@400;700&display=swap');
+
+/*Reglas de estilos globales*/
+@font-face{
+    font-family: 'Eproxy';
+    src: url('../fonts/Eproxy.ttf');
+}
+*{
+    /* color: blue; */
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(to right, #241f90, #003293, #004092, #004b8d, #005485, #00628c, #006f92, #007c95, #0094a7, #00adb3, #00c5b9, #00ddb9); 
+    color: white; 
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    margin: 0;
+}
+.gorditas-regular {
+    font-family: "Gorditas", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.gorditas-bold {
+    font-family: "Gorditas", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.aladin-regular {
+    font-family: "Aladin", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+
+/*MAIN*/
+#nombreTitulo{
+    font-family: 'Segoe UI';
+}
+#apodoTitulo{
+    font-family: 'Eproxy';
+}
+#tecnologias{
+    font-weight: bold;
+    font-style: italic;
+    /* text-decoration: overline; */
+}
+h1{
+    color: lightgrey;
+}
+a{
+    color: yellow;
+}
+#tablaEjemplo{
+    background-color: #0094a7;
+    color: white;
+    border: solid 1px rgb(129, 255, 236,);
+    border-collapse: collapse;
+}
+td{
+    border: solid 1px rgb(129, 255, 236);
+    padding: 12px;
+}
+
+/**Footer*/
+footer{
+    background: black;
+    color: white;
+    height: 15vh;
+}
+#linksFooter{
+    list-style-image: url("../img/iconLink.gif");
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+.linkRedes{
+    margin: 0 20px;
+    /* display: inline-block; */
+    /* list-style-image: url("../img/iconLinkPNG.png"); */
+}
+.anchorRedes{
+    color: white !important;
+}
+
+/*
+* Estilos de formulario
+*/
+form{
+    border: whitesmoke solid 2px;
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: #3592a4;
+    color: white;
+    font-weight: bold;
+}
+.inputForm{
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.btnForm{
+    background: #00ddb9;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #005485;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.btnForm:hover{
+    cursor: pointer;
+    border: #003293 solid 2px;
+    box-shadow: 0 3px 20px 1px lightgray;
+}
