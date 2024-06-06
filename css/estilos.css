@@ -51,19 +51,21 @@ nav{
 /*MAIN*/
 main{
     overflow: auto;
+    position: relative;
     width: 74vw;
     height: 90vh;
-    background: lightgoldenrodyellow;
+    /* background: lightgoldenrodyellow; */
     float: right;
 }
 #control-login{
     height: 9%;
     width: 100%;
-    background: #121212;
+    background: #1212123e;
     padding: 0.25% 3%;
     box-sizing: border-box;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 .controlBtn{
     background: #000000;
@@ -137,10 +139,11 @@ main{
 }
 /*albumes*/
 #albumes{
+    margin-top: 50px;
     height: 45vh;
 }
 #albumes > div:first-child{
-    height: 20%;
+    height: 15%;
     position: relative;
 }
 #albumes > div:first-child > h2{
@@ -162,7 +165,7 @@ main{
     text-decoration: underline;
 }
 #albumes > div:last-child{
-    height: 80%;
+    height: 85%;
     padding: 0 1px 0 5px;
 }
 #albumes > div:last-child > div{
@@ -172,11 +175,35 @@ main{
     margin: 0 1px;
     text-align: center;
     position: relative;
+    /* transition: all 3s cubic-bezier(.74,1.53,.79,-0.29); */
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(.26,1.07,.33,-0.45);
+    transition-delay: 0.5s;
+    filter: grayscale(1);
 }
 #albumes > div:last-child > div:hover{
     background-color: #212121;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 0 15px 25px #7670d3;
+    border: #69f5ff solid 4px;
+    filter: grayscale(0);
+}
+#albumes > div:last-child > div:nth-child(1):hover{
+    transform: rotate(45deg);
+}
+#albumes > div:last-child > div:nth-child(2):hover{
+    transform: skew(-15deg, -15deg);
+}
+#albumes > div:last-child > div:nth-child(3):hover{
+    transform: scale(1.1);
+}
+#albumes > div:last-child > div:nth-child(4):hover{
+    transform: translate(-25px, -50px);
+}
+#albumes > div:last-child > div:nth-child(5):hover{
+    transform: rotate(360deg) skew(5deg, 5deg) scale(1.1) translate(-25px, -50px);
 }
 #albumes > div:last-child > div > img{
     width: 92%;
@@ -190,6 +217,9 @@ main{
     margin: 11px 0;
     font-size: 0.95em;
     text-align: start;
+}
+#albumes > div:last-child > div:hover > h5{
+    text-shadow: 0 3px 5px #519af4;
 }
 #albumes > div:last-child > div:nth-child(1) > h5{
     text-transform: uppercase;
@@ -263,4 +293,37 @@ main{
 #btnwapp:hover{
     cursor: pointer;
     transform: scale(1.1);
+}
+
+/*Estilos de la pagina detalles*/
+#feedDetalle > article:first-child{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 50vh;
+    width: 100%;
+    background-image: url("https://i.scdn.co/image/ab6761860000101602540a73e56f4cd5e2f9881b");
+    background-size: 100% 75%;
+    background-position: right -150px top -15%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: top 0 right 50px; */
+}
+#feedDetalle > article:first-child > div{
+    width: 100%;
+    height: 100%;
+    padding: 10vh 0 0 15px;
+    background-color: #0000001b;
+    box-sizing: border-box;
+}
+#feedDetalle > article:first-child> div > p{
+    margin: 0;
+}
+#feedDetalle > article:first-child> div > h1{
+    font-size: 5em;
+    margin: 5px 0;
+}
+#feedDetalle > article:nth-child(2){
+    background-image: linear-gradient(to bottom, #959595, #6e6e6e, #494949, #272727, #000000);
+    height: 600px;
 }
