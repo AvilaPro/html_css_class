@@ -1,0 +1,88 @@
+/*Estrategia de resposive design: first-mobile*/
+/*Version movil*/
+header{
+    display: none;
+}
+nav{
+    height: 10vh;
+    position: fixed;
+    top: 0;
+}
+/*MAIN*/
+main > article{
+    width: 100%;
+}
+main > article > img{
+    max-height: 40vh;
+    max-width: 100%;
+}
+
+/*Version tablets*/
+@media screen and (min-width: 576px) {
+    header{
+        display: block;
+        max-width: 10vw;
+        width: 10vw;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    nav{
+        width: 90vw;
+        height: 10vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    /*MAIN*/
+    main{
+        width: 90vw;
+        position: relative;
+        top: 10vh;
+        left: 10vw;
+    }
+    main > article{
+        width: 45%;
+        display: inline-block;
+    }
+    main > article > img{
+        max-height: 30vh;
+        max-width: 100%;
+    }
+}
+
+/*version desktop*/
+@media screen and (min-width: 950px){
+    header{
+        display: block;
+        max-width: 10vw;
+        width: 10vw;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    nav{
+        width: 90vw;
+        height: 10vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    /*MAIN*/
+    main{
+        width: 90vw;
+        position: relative;
+        top: 10vh;
+        left: 10vw;
+    }
+    main > article{
+        width: 30%;
+        display: inline-block;
+    }
+    main > article > img{
+        max-height: 27vh;
+        max-width: 100%;
+    }
+}

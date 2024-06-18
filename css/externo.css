@@ -1,0 +1,19 @@
+
+
+/*Version movil*/
+header{
+    display: none;
+}
+nav{
+    height: 10vh;
+    position: fixed;
+    top: 0;
+}
+/*MAIN*/
+main > article{
+    width: 100%;
+}
+main > article > img{
+    max-height: 40vh;
+    max-width: 100%;
+}
