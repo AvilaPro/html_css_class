@@ -1,0 +1,4 @@
+/*Todas las importaciones deben procurar hacerse en las primeras lineas del documento*/
+@import url("./mobile.css");
+@import url("./tablet.css") screen and (min-width: 576px);
+@import url("./desktop.css") screen and (min-width: 950px);
