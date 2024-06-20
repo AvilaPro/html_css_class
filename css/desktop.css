@@ -30,3 +30,6 @@
         max-height: 27vh;
         max-width: 100%;
     }
+    article > div:first-of-type img{
+        height: 36px;
+    }

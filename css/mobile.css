@@ -13,5 +13,9 @@ main > article{
 }
 main > article > img{
     max-height: 40vh;
+    width: 100%;
     max-width: 100%;
+}
+article > div:first-of-type img{
+    height: 40px;
 }

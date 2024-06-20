@@ -1,0 +1,41 @@
+/*Estilos Globales*/
+*{
+    font-family: 'Segoe UI';
+}
+body{
+    margin: 0;
+}
+
+/*MAIN*/
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/*Maquetado de las "cards" de los videos*/
+article{
+    margin-bottom: 10px;
+}
+article > div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+article > div:first-of-type img{
+    border-radius: 45px;
+}
+article > div:first-of-type > div{
+    padding-left: 7px;
+}
+article > div:first-of-type > div h6{
+    font-size: 1em;
+    margin: 0;
+}
+article > div:first-of-type > div p{
+    margin: 0;
+    color: rgb(164, 162, 162);
+}
+article > div:first-of-type button{
+    background: none;
+    border: none;
+    height: fit-content;
+}
