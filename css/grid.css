@@ -1,0 +1,110 @@
+/*GLOBALES*/
+body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*DESKTOP*/
+body{
+    display: grid;
+    grid-template-areas: 
+        "header header nav nav nav nav nav nav nav nav nav nav"
+        "header header main main main main main main main main main main"
+        "header header main main main main main main main main main main"
+        "header header main main main main main main main main main main"
+        "header header main main main main main main main main main main"
+    ;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 120px;
+}
+
+header{
+    background-color: rgba(127, 255, 212, 0.382);
+    grid-area: header;
+}
+nav{
+    background-color: rgba(173, 216, 230, 0.388);
+    grid-area: nav;
+    display: grid;
+}
+nav > div:first-child{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px;
+    align-items: center;
+    height: 60px;
+}
+nav > div:first-child input{
+    grid-column: 2/8;
+    height: 50%;
+    border-radius: 20px;
+    border: none;
+}
+nav > div:first-child > div:first-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    grid-column: 8/9;
+}
+nav > div:first-child > div:first-of-type button{
+    height: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 40px;
+    border: none;
+}
+nav > div:first-child > div:last-of-type{
+    grid-column: 11/13;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+nav > div:first-child > div:last-of-type button{
+    height: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 40px;
+    border: none;
+}
+nav > div:last-child{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px;
+    height: 60px;
+}
+nav button{
+    height: 30%;
+}
+main{
+    background-color: rgba(255, 160, 122, 0.24);
+    grid-area: main;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 30%);
+    max-width: 100%;
+    gap: 1.5em;
+    box-sizing: border-box;
+}
+main > article{
+    max-height: 100%;
+}
+main > article > img:first-of-type{
+    width: 100%;
+    border-radius: 12px;
+}
+main > article > div{
+    display: flex;
+    justify-content: space-around;
+}
+main > article > div img{
+    height: 50px;
+    border-radius: 40px;
+}
+main > article > div > button{
+    height: 20px;
+    aspect-ratio: 1/1;
+    background: none;
+    border: none;
+}
