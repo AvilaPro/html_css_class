@@ -1,0 +1,51 @@
+/* Selector universal ( * ) */
+*{
+
+}
+/*Selector de tipo o elemento*/
+h4{
+    text-decoration: underline;
+}
+/*Selector de clase ( . ) */
+.masculino{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.femenino{
+    font-style: italic;
+    text-decoration: overline;
+}
+/*Selector de id ( # ) */
+#titulo{
+    background: yellow;
+}
+#cascada{
+    background: black;
+}
+#divImgPerfil{
+    text-align: center;
+}
+
+/*Maquetacion*/
+/*HEADER*/
+header{
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: inline-block;
+    margin-left: 20px;
+}
+.aNav{
+    margin: 0 8px;
+}
+/*END HEADER*/
+/*MAIN*/
+#imgPerfil{
+    height: 175px;
+    width: 175px;
+    border-radius: 95px;
+    border: yellow solid 3px;
+    box-shadow: 0 4px 15px 1px yellow;
+    padding: 7px;
+}
