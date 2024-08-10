@@ -1,51 +1,98 @@
-/* Selector universal ( * ) */
-*{
+/*Importaciones*/
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
 
+@font-face {
+    font-family: Transformer;
+    src: url('../fonts/deceptibots.ttf');
 }
+
+/* Selector universal ( * ) */
+* {
+    font-family: 'Segoe UI';
+}
+
 /*Selector de tipo o elemento*/
-h4{
+h4 {
     text-decoration: underline;
 }
+
 /*Selector de clase ( . ) */
-.masculino{
+.masculino {
     font-weight: bold;
     text-decoration: underline;
 }
-.femenino{
+
+.femenino {
     font-style: italic;
     text-decoration: overline;
 }
+
 /*Selector de id ( # ) */
-#titulo{
+#titulo {
     background: yellow;
+    text-align: center;
 }
-#cascada{
+
+#cascada {
     background: black;
 }
-#divImgPerfil{
+
+#divImgPerfil {
     text-align: center;
 }
 
 /*Maquetacion*/
 /*HEADER*/
-header{
+header {
     display: flex;
     align-items: center;
 }
-nav{
+
+nav {
     display: inline-block;
     margin-left: 20px;
 }
-.aNav{
+
+.aNav {
     margin: 0 8px;
 }
+
+#navList {
+    list-style: none;
+}
+
+#navList li {
+    display: inline-block;
+}
+
+#navList li a {
+    text-decoration: none;
+}
+
 /*END HEADER*/
 /*MAIN*/
-#imgPerfil{
+#imgPerfil {
     height: 175px;
     width: 175px;
     border-radius: 95px;
     border: yellow solid 3px;
     box-shadow: 0 4px 15px 1px yellow;
     padding: 7px;
+}
+
+#skillsList {
+    list-style-image: url('../img/favicon-logo-Avilapro-Amarillo-removebg-preview.png');
+}
+
+#skillsList li {
+    font-family: "Uncial Antiqua", system-ui !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.studiesLi {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
 }

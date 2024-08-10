@@ -12,17 +12,22 @@
             color: #B02065;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
 </head>
 <body style="background-image: linear-gradient(to right bottom, #31e8e3, #00d4f4, #00beff, #00a3ff, #0083ff, #4275fc, #6465f5, #8051eb, #9d55f0, #b85af5, #d15ff9, #e965fd); background-repeat: no-repeat; background-size: cover; min-height: 100vh;">
     <!-- HEADER -->
     <header>
         <img src="./img/logoAvila-removebg-preview.png" height="75px" alt="Logo Avilapro">
-        <span>Avilapro</span>
+        <span style="font-family: Transformer; font-size: 2.5em;">Avilapro</span>
         <nav>
-            <a class="aNav" href="#">Home</a>
-            <a class="aNav" href="./works.html">Trabajos realizados</a>
-            <a class="aNav" href="#skills">Mis habilidades</a>
-            <a href="https://avilapro.github.io" target="_blank">Mi página web</a>
+            <ul id="navList">
+                <li><a class="aNav" href="#">Home</a></li>
+                <li><a class="aNav" href="./works.html">Trabajos realizados</a></li>
+                <li><a class="aNav" href="#skills">Mis habilidades</a></li>
+                <li><a href="https://avilapro.github.io" target="_blank">Mi página web</a></li>
+            </ul>
         </nav>
     </header>
     <!-- MAIN -->
@@ -33,11 +38,24 @@
         </div>
         <!-- <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/full_stack_banner.jpg" alt=""> -->
         <section id="skills">
+            <audio src="./audio/epic-cinematic-trailer-version-60s-9887.mp3" loop controls></audio>
+            <video src="./video/32767-394004551.mp4" controls autoplay loop style="width: 100%; height: 80vh;"></video>
             <h2>Habilidades</h2>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JS</p>
-            <p>Git</p>
+            <ul id="skillsList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+        </section>
+        <section id="studies">
+            <h2>Estudios</h2>
+            <ol>
+                <li class="studiesLi">Bachiller</li>
+                <li class="studiesLi">TSU en Electronica Mencion Mantenimiento</li>
+                <li class="studiesLi">Ingieneria en Telecomunicaciones</li>
+                <li class="studiesLi">Programador Full Stack (PHP y NodeJs)</li>
+            </ol>
         </section>
     </main>
 </body>
