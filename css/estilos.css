@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'MMCMedium';
+    src: url("../fonts/MMCOFFICE-Medium.ttf");
+}
+/*Estilos globales*/
+*{
+    font-family: MMCMedium;
+}
+body{
+    margin: 0;
+}
+/*HEADER*/
+header{
+    background-color: black;
+    height: 14vh;
+    color: white;
+    width: 100%;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    font-size: 0.75em;
+}
+.elHeader{
+    display: inline-block;
+}
+picture{
+    width: 5%;
+    height: 90%;
+    display: block;
+}
+#logoHeader{
+    width: 100%;
+    height: 100%;
+}
+#divNavHeader{
+    float: right;
+    height: 100%;
+}
+nav{
+    height: 100%;
+}
+nav ul{
+    margin: 0;
+    height: 100%;
+    padding: 30px 0 0 0;
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 1em;
+}
+#btnCotizar{
+    position: relative;
+    height: 14vh;
+    background-color: white;
+    color: #ed0000;
+    top: -7px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+}
+#btnCotizar p{
+    position: relative;
+    top: 6px;
+    font-weight: bold;
+}
+.elHeader ion-icon{
+    padding: 0 15px;
+    border-right: solid 1px white;
+    font-size: 1.5em;
+}
