@@ -1,0 +1,13 @@
+/*Estilos Globales*/
+body{
+    background-image: linear-gradient(to left bottom, #31d4d4, #00b6e9, #558ee2, #9a5db0, #ac2961); background-repeat: no-repeat; min-height: 100vh;
+}
+
+.imgLogos{
+    max-height: 10vh;
+    aspect-ratio: 1/1;
+}
+
+#prueba{
+    color: yellow;
+}

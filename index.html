@@ -1,29 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullstack Developer</title>
-    <style>
-        body{
-            color: #bffcfb;
-        }
-    </style>
+  <!-- Metas -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullstack Developer</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/estilos.css">
+  <style>
+    body {
+      color: #bffcfb;
+    }
+  </style>
 </head>
-<body style="background-image: linear-gradient(to left bottom, #31d4d4, #00b6e9, #558ee2, #9a5db0, #ac2961); background-repeat: no-repeat; min-height: 100vh;">
-    <h1 style="color: red;">Programación Fullstack</h1>
+
+<body>
+  <header>
+    <picture>
+      <img src="" alt="">
+    </picture>
+    <nav>
+      <a href="">Home</a>
+      <a href="./html/catalogo.html">Catalogo</a>
+      <a href="https://wa.me/584245142978?text=Hola%20Avilapro%20quiero%20conocer%20tus%20servicios">Contacto</a>
+      <a href="">Login/Register</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Presentacion -->
+    <h1 style="color: red;">Avilapro - Programador Fullstack</h1>
     <p><em>Tecnologías de un programador fullstack javascript</em></p>
-    <hr>
-    <h2>Desarrollador Frontend</h2>
-    <h3>Lenguajes básicos</h3>
-    <h4>HTML</h4>
-    <p><b>HTML</b>, acrónimo en inglés de <strong>HyperText Markup Language</strong> («lenguaje de marcado de hipertexto»), hace referencia al lenguaje de marcado utilizado en la creación de páginas web. Este estándar que sirve de referencia del software que interactúa con la elaboración de páginas web en sus diferentes versiones.</p>
-    <p>Define una estructura básica y un código (denominado código HTML) para la presentación de contenido de una página web, que incluye texto, imágenes, videos, juegos, entre otros elementos. Este estándar es gestionado por el <i>World Wide Web Consortium</i> (W3C) o Consorcio WWW, una organización dedicada a la estandarización de la mayoría de las tecnologías asociadas a la web, especialmente en lo relacionado con su escritura e interpretación. HTML se considera el lenguaje web más importante y su invención crucial para el surgimiento, desarrollo y expansión de la World Wide Web (WWW). Es el estándar que prevalece en la visualización de páginas web y es adoptado por todos los navegadores actuales.</p>
-    <h4>CSS</h4>
-    <h4>Javascript</h4>
-    <hr>
-    <h2>Desarrollador Backend</h2>
-    <h3>Bases de datos</h3>
-    <h3>Servidores web</h3>
+    <!-- Tecnologías frontend -->
+    <section id="frontend">
+      <h2>Desarrollador Frontend</h2>
+      <img class="imgLogos" src="./img/logoSF.png" alt="logos lenguajes basicos">
+      <h3>Lenguajes básicos</h3>
+      <article id="html">
+        <h4>HTML</h4>
+        <img class="imgLogos" src="./img/html.png" alt="logo HTML">
+        <p><b>HTML</b>, acrónimo en inglés de <strong>HyperText Markup Language</strong> («lenguaje de marcado de
+          hipertexto»), hace referencia al lenguaje de marcado utilizado en la creación de páginas web. Este
+          estándar que sirve de referencia del software que interactúa con la elaboración de páginas web en sus
+          diferentes versiones.</p>
+        <p>Define una estructura básica y un código (denominado código HTML) para la presentación de contenido de
+          una página web, que incluye texto, imágenes, videos, juegos, entre otros elementos. Este estándar es
+          gestionado por el <i>World Wide Web Consortium</i> (W3C) o Consorcio WWW, una organización dedicada a la
+          estandarización de la mayoría de las tecnologías asociadas a la web, especialmente en lo relacionado con
+          su escritura e interpretación. HTML se considera el lenguaje web más importante y su invención crucial
+          para el surgimiento, desarrollo y expansión de la World Wide Web (WWW). Es el estándar que prevalece en
+          la visualización de páginas web y es adoptado por todos los navegadores actuales.</p>
+      </article>
+      <article id="css">
+        <h4>CSS</h4>
+        <img class="imgLogos" src="./img/css.png" alt="logo CSS">
+      </article>
+      <article id="javascript">
+        <h4>Javascript</h4>
+        <img class="imgLogos" src="./img/js.png" alt="logo">
+      </article>
+    </section>
+    <!-- Tecnologías Backend -->
+    <section id="backend">
+      <h2 id="titleBackend">Desarrollador Backend</h2>
+      <section id="database">
+        <h3>Bases de datos</h3>
+        <section id="DBRelacionales">
+          <article id="mysql"></article>
+          <article id="postgresql"></article>
+          <article id="sqlite"></article>
+        </section>
+        <section id="DBNoRelacionales">
+          <article id="mongodb"></article>
+          <article id="firestorage"></article>
+          <article id="mariadb"></article>
+        </section>
+      </section>
+      <section id="webServers">
+        <h3>Servidores web</h3>
+        <section id="nodejs">
+          <article id="express"></article>
+          <article id="nestjs"></article>
+        </section>
+        <section id="php">
+          <article id="php"></article>
+          <article id="laravel"></article>
+        </section>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <p>Todos los derechos reservados &copy; 2023 Avilapro</p>
+  </footer>
+
+  <!-- <p><em>Si deseas conocer que puedo realizar da <strong><a href="./html/catalogo.html">click aqui</a></strong></em>
+  </p>
+  <p><em>Visita mi <a href="https://avilapro.github.io" target="_blank">sitio anterior</a></em></p>
+  <p>Mira mis habilidades de <a href="#titleBackend">Backend</a></p>
+  <p>Contactame al <a href="https://wa.me/584245142978?text=Hola%20Avilapro%20quiero%20conocer%20tus%20servicios"
+      target="_blank">Whatsapp</a></p> -->
 </body>
 </html>
