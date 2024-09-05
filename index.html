@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -38,12 +39,43 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <section id="carousel">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" autoplay>
+                    <div class="swiper-slide" id="slide1">
+                        <div id="btnSlide1">cotiza aqui</div>
+                    </div>
+                    <div class="swiper-slide" id="slide2"></div>
+                    <div class="swiper-slide" id="slide3"></div>
+                    <div class="swiper-slide" id="slide4"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 
     <!-- Scripts de ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
