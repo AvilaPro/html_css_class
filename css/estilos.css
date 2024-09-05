@@ -18,6 +18,9 @@ header{
     padding: 7px 20px;
     box-sizing: border-box;
     font-size: 0.75em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .elHeader{
     display: inline-block;
@@ -133,5 +136,141 @@ nav ul li{
   }
 
 /*FIN CAROUSEL*/
+/*MODELOS*/
+#modelos{
+    height: 60vh;
+}
+#titleModelos{
+    padding: 1.2% 4%;
+    position: relative;
+    background: #BFC2C4;
+    height: 30%;
+    box-sizing: border-box;
+}
+.elTitleModelos{
+    display: inline-block;
+}
+#titleModelos h1{
+    font-weight: 900;
+    font-size: 3.5em;
+    margin: 0;
+    padding: 0 12vw 0 0;
+    border-right: #ed0000 1px solid;
+}
+#titleModelos p{
+    margin: 0;
+    padding-left: 5vw;
+    position: relative;
+    top: -18px;
+    font-weight: 200;
+}
+#cardsModelos{
+    height: 69%;
+    padding: 2% 4% 1%;
+}
+#cardsModelos .card{
+    width: 13.3%;
+    display: inline-block;
+    max-height: 70%;
+    margin: 1.5%;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+}
+.card span{
+    font-size: 0.6em;
+}
+.card p{
+    margin: 0;
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+.card > p:first-of-type{
+    font-size: 1em;
+}
+/*FIN MODELOS*/
+/*BANNER*/
+#banner{
+    background-image: url("https://www.mitsubishi-motors.com.ec/wp-content/uploads/2022/02/banner_eclipse.png");
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+}
+/*FIN BANNER*/
+/*VER*/
+#ver{
+    height: 85vh;
+    margin-top: 15vh;
+    padding: 0 5%;
+}
+#ver div{
+    height: 50%;
+    display: inline-block;
+    width: 33%;
+    margin: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ver div > div{
+    width: 100%;
+    height: 100%;
+}
+#ver div > div:hover{
+    background-color: rgba(0, 0, 0, 0.755);
+}
+#ver > div:nth-child(1){
+    background-image: url("https://www.mitsubishi-motors.com.ec/wp-content/uploads/2021/04/eclipse_cross-1.png");
+}
+#ver > div:nth-child(2){
+    background-image: url("https://www.mitsubishi-motors.com.ec/wp-content/uploads/2022/06/650x484_2.png");
+}
+#ver > div:nth-child(3){
+    background-image: url("https://www.mitsubishi-motors.com.ec/wp-content/uploads/2021/04/asx-1.png");
+}
+#ver > div:nth-child(4){
+    background-image: url("https://www.mitsubishi-motors.com.ec/wp-content/uploads/2022/06/650x484_1.png");
+}
+#ver > div:nth-child(5){
+    background-image: url("https://www.mitsubishi-motors.com.ec/wp-content/uploads/2020/10/repuestio.jpg");
+}
+#ver > div:nth-child(6){
+    background-image: url("https://www.mitsubishi-motors.com.ec/wp-content/uploads/2020/12/taller.png");
+}
+#ver div div div{
+    position: absolute;
+    bottom: 2px;
+    left: 25%;
+    width: 50%;
+    height: 15%;
+    background-color: #3133358a;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 7px 0 2px;
+    box-sizing: border-box;
+    border: white solid 1px;
+}
+#ver div div div:hover{
+    background-color: black;
+    cursor: pointer;
+    /* .iconVer{
+        display: inline-block;
+        margin-left: 5px;
+        font-weight: bold;
+    } */
+}
+#ver div div div:hover .iconVer{
+    visibility: visible;
+    margin-left: 5px;
+    font-weight: bold;
+    transform: translateX(5px);
+}
+.iconVer{
+    visibility: hidden;
+    transition: all 0.3s ease-in 0s;
+}
+/*FIN VER*/
 
 /*FIN MAIN*/
