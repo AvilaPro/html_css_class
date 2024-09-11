@@ -13,6 +13,10 @@
       color: #bffcfb;
     }
   </style>
+  <!-- Fuentes embebidas de Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +33,12 @@
   </header>
   <main>
     <!-- Presentacion -->
-    <h1 style="color: red;">Avilapro - Programador Fullstack</h1>
-    <p><em>Tecnologías de un programador fullstack javascript</em></p>
+    <h1 id="h1Titulo">Avilapro - Programador Fullstack</h1>
+    <p id="pSubtitulo"><em>Tecnologías de un programador fullstack javascript</em></p>
+    <div style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <video id="video"  src="./videos/programador.mp4" autoplay loop controls></video>
+      <audio src="./audio/music.mp3" autoplay loop controls></audio>
+    </div>
     <!-- Tecnologías frontend -->
     <section id="frontend">
       <h2>Desarrollador Frontend</h2>
@@ -88,6 +96,31 @@
         </section>
       </section>
     </section>
+    <section id="experiencia">
+      <h2>Experiencia profesional</h2>
+      <ol id="olExperiencia" class="syne-mono-regular">
+        <li style="font-weight: 900;">
+          Profesor
+          <ul>
+            <li>Cadif1</li>
+          </ul>
+        </li>
+        <li style="font-style: italic;">
+          Emprendedor
+          <ul>
+            <li>Mael Import</li>
+          </ul>
+        </li>
+        <li style="text-decoration: line-through;">
+          Tecnico laboratorio Electrónica
+          <ul>
+            <li>IUTAJS</li>
+            <li>Invicta Electrónica</li>
+          </ul>
+        </li>
+      </ol>
+
+    </section>
   </main>
   <footer>
     <p>Todos los derechos reservados &copy; 2023 Avilapro</p>
@@ -99,5 +132,26 @@
   <p>Mira mis habilidades de <a href="#titleBackend">Backend</a></p>
   <p>Contactame al <a href="https://wa.me/584245142978?text=Hola%20Avilapro%20quiero%20conocer%20tus%20servicios"
       target="_blank">Whatsapp</a></p> -->
+
+  <!-- Mis Scripts -->
+  <script>
+    var video = document.getElementById("video");
+    // video.play();
+    // Show loading animation.
+    var playPromise = video.play();
+
+    if (playPromise !== undefined) {
+      playPromise.then(_ => {
+        // Automatic playback started!
+        // Show playing UI.
+        console.log("video play");
+      })
+        .catch(error => {
+          // Auto-play was prevented
+          // Show paused UI.
+        });
+    }
+  </script>
 </body>
+
 </html>
