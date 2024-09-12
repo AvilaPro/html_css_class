@@ -207,7 +207,6 @@ nav ul li{
 #ver div{
     height: 50%;
     display: inline-block;
-    width: 33%;
     margin: 0;
     position: relative;
     background-repeat: no-repeat;
@@ -273,4 +272,158 @@ nav ul li{
 }
 /*FIN VER*/
 
+/*NOTICIAS*/
+#noticias{
+    margin-top: 50px;
+    padding: 0 5%;
+    & > div:first-child{
+
+        & h2,p{
+            display: inline-block;
+        }
+        & h2{
+            font-size: 3.5em;
+            margin: 0;
+            padding-right: 15%;
+            border-right: #ed0000 solid 1px;
+        }
+        & p{
+            position: relative;
+            top: -15px;
+            padding-left: 5%;
+        }
+    }
+    & > div:last-child{
+        height: 75vh;
+        position: relative;
+        & > div{
+            display: inline-block;
+            & a{
+                width: 100%;
+                height: 100%;
+                display: block;
+                text-decoration: none;
+                color: none;
+                background: #00000083;
+            }
+            & > div,p{
+                position: relative;
+            }
+            & > div{
+                bottom: 30%;
+                left: 5%;
+                color: white;
+                width: fit-content;
+                padding: 8px 12px;
+                border: solid white 1px;
+            }
+            & > p{
+                bottom: 27%;
+                color: white;
+                padding-left: 5%;
+                font-weight: bold;
+            }
+        }
+        & > div:nth-child(1){
+            width: 40%;
+            height: 100%;
+            background-image: url("https://www.mitsubishi-motors.com.ec/wp-content/uploads/2022/09/image00013-scaled.jpg");
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            object-fit: cover;
+            background-position: right 55% center;
+        }
+        & > div:nth-child(2){
+            background-image: url("https://www.mitsubishi-motors.com.ec/wp-content/uploads/2021/12/Outlander_ext6.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center;
+            width: 57%;
+            height: 48%;
+            position: absolute;
+            top: 0%;
+            right: 0;
+            & > div{
+                bottom: 35%;
+            }
+            & > p{
+                bottom: 40%;
+                text-transform: uppercase;
+            }
+        }
+        & > div:nth-child(3){
+            width: 28%;
+            height: 48%;
+            background-image: url("https://www.mitsubishi-motors.com.ec/wp-content/uploads/2021/11/1637001770571.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            bottom: 0;
+            right: 29%;
+            & > div{
+                bottom: 50%;
+            }
+            & > p{
+                bottom: 50%;
+                text-transform: capitalize;
+            }
+        }
+        & > div:nth-child(4){
+            width: 28%;
+            height: 48%;
+            background-image: url("https://www.mitsubishi-motors.com.ec/wp-content/uploads/2020/06/eclipse_nota.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            & > div{
+                bottom: 50%;
+            }
+            & > p{
+                bottom: 50%;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+#noticias > div:last-child > div:nth-child(1):hover{
+    background-size: auto 110%;
+}
+#noticias > div:last-child > div:nth-last-child(2):hover{
+    background-size: 110% 110%;
+}
+#noticias > div:last-child > div:nth-last-child(3):hover{
+    background-size: 110% 110%;
+}
+#noticias > div:last-child > div:nth-last-child(4):hover{
+    background-size: 110% 110% !important;
+}
+
+
+/*FIN NOTICIAS*/
+
 /*FIN MAIN*/
+
+/*MEDIAS QUERIES*/
+@media screen and (max-width: 600px){
+    #ver > div{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 601px) {
+    header > div{
+        display: none !important;
+    }
+    #ver > div{
+        width: 48%;
+    }
+}
+@media screen and (min-width: 981px){
+    header > div{
+        display: inline-block !important;
+    }
+    #ver > div{
+        width: 33%;
+    }
+}
