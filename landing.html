@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Landing Page</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <h1>Mi landing Page</h1>
+    <h3>Para obtener informacion del producto o servicio deja tus datos aqui:</h3>
+    <form action="" method="get" name="landingForm">
+        <div>
+            <label for="nameLanding">Nombre:</label>
+            <input type="text" id="nameLanding" name="nombre" placeholder="nombre" maxlength="15" required>
+        </div>
+
+        <div>
+            <label for="emailLanding">Correo:</label>
+            <input type="text" id="emailLanding" name="correo" placeholder="correo" maxlength="30" required>
+        </div>
+
+        <div>
+            <label for="phoneLanding">Telefono:</label>
+            <input type="text" id="phoneLanding" name="telefono" placeholder="telefono" required>
+        </div>
+
+        <div>
+            <label for="selectLanding">Selecciona el curso:</label><br>
+            <select name="curso" id="selectLanding">
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="1">Diseño web</option>
+                <option value="2">Juegos Web</option>
+                <option value="3">Aplicacion movil</option>
+            </select>
+        </div>
+
+        <label>Modalidad</label>
+        <div>
+            <input type="radio" id="presencial" name="modalidad" value="presencial">
+            <label for="presencial">Presencial</label>
+            <input type="radio" id="online" name="modalidad" value="online">
+            <label for="online">Online</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="adsOffChk" id="adsOffChk">
+            <label for="adsOffChk">No deseo recibir publicidad</label>
+        </div>
+
+        <input type="hidden" name="oculto" value="algo que no se ve">
+
+        <input type="color" name="color" id="">
+        <input type="date" name="fecha" id="">
+        <input type="file" name="archivo" id="">
+        <input type="number" name="numero" id="">
+        <input type="range" name="rango" id="">
+        <input type="time" name="hora" id="">
+        <input type="week" name="semana" id="">
+
+        <input class="btnForm" type="submit" value="Registrar">
+        <input class="btnForm" type="reset" value="Limpiar Campos">
+        <input class="btnForm" type="button" value="Boton">
+    </form>
+</body>
+</html>

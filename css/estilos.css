@@ -46,8 +46,55 @@ h2 {
     font-style: normal;
 }
 
+/*Estilos de la tabla*/
+table{
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid #fffc3c;
+    text-align: center;
+    color: aliceblue;
+}
 
-
+/*Estilos de formularios*/
+form{
+    background-color: #fffc3c79;
+    margin: 0 auto;
+    width: 50%;
+    border: solid 3px #fffc3c;
+    border-radius: 10px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form > div{
+    margin: 10px 0;
+}
+form label{
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+form input{
+    background: #00b7e984;
+    border: solid 1px  #008fb7;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 10px;
+}
+form input:focus{
+    box-shadow: 0px 5px 7px #a1ffff;
+}
+form input:focus-visible{
+    outline: none;
+}
+.btnForm{
+    padding: 7px 10px;
+    margin: 10px 0;
+}
 
 
 
