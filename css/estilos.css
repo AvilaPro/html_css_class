@@ -174,6 +174,22 @@ nav ul li{
     max-height: 70%;
     margin: 1.5%;
     text-align: center;
+    transition: all 2.5s ease-in-out;
+    position: relative;
+    &:nth-child(1):hover{
+        background: white;
+        padding: 0.7em 0;
+        box-shadow: 0px 7px 15px #ed0000;
+        z-index: 1000;
+        transform: scale(2) translate(25%, -50%);
+    }
+    &:hover{
+        background: white;
+        padding: 0.7em 0;
+        box-shadow: 0px 7px 15px #ed0000;
+        z-index: 1000;
+        transform: scale(2) translate(-25%, -50%);
+    }
 }
 .card img{
     width: 100%;
@@ -202,7 +218,12 @@ nav ul li{
 #ver{
     height: 85vh;
     margin-top: 15vh;
-    padding: 0 5%;
+    padding: 15% 5%;
+    background-image: url('https://www.mitsubishi-motors.com.ec/wp-content/uploads/2022/02/banner_eclipse.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top left;
+    background-attachment: fixed;
 }
 #ver div{
     height: 50%;
@@ -402,6 +423,38 @@ nav ul li{
 
 
 /*FIN NOTICIAS*/
+
+/*EFFECTS*/
+#effects{
+    margin: 100px 0;
+    > div{
+        height: 40vh;
+        width:30%;
+        background-image: url('../img/logoInstagram.png');
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-origin: padding-box;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 3em;
+        border: #004fed solid 3px;
+        border-radius: 4em 4em 4em 10px;
+        color: white;
+        font-weight: bold;
+        transition: all 3s cubic-bezier(.1,1.61,.34,-0.36);
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0px 7px 10px 5px rgb(85, 203, 254);
+            text-shadow: 0px 10px 3px rgb(85, 155, 254);
+            transform: scale(0.5) translate(250px, -175px) rotate(5deg) skew(5deg, 5deg);
+        }
+    }
+}
+
+/*FIN EFFECTS*/
 
 /*FIN MAIN*/
 
