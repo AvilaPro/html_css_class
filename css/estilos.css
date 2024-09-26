@@ -1,0 +1,63 @@
+/*Reglas globales*/
+body{
+    margin: 0;
+}
+
+/*Fin Reglas globales*/
+
+/*HEADER*/
+header{
+    height: 10vh;
+    padding: 0 1vw;
+    background: #4618ac;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    >div{
+        display: flex;
+        align-items: center;
+        > span{
+            margin: 0 8px;
+        }
+    }
+    > div:first-child{
+        display: flex;
+        align-items: center;
+        > img{
+            height: 70%;
+        }
+    }
+    >div:last-child{
+        > input{
+            display: none;
+        }
+        >p:first-of-type{
+            display: none;
+        }
+    }
+}
+
+/*FIN HEADER*/
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 931px) {
+    header{
+        height: 15vh;
+        padding: 0 3vw;
+        >div:last-child{
+            > input{
+                display: inline-block;
+            }
+            >p:first-of-type{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    #btnMenu{
+        display: none;
+    }
+    #btnSearch{
+        display: none;
+    }
+}
