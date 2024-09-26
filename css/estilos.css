@@ -1,4 +1,7 @@
 /*Reglas globales*/
+*{
+    font-family: 'Segoe UI';
+}
 body{
     margin: 0;
 }
@@ -28,7 +31,7 @@ header{
         }
     }
     >div:last-child{
-        > input{
+        > div:first-child{
             display: none;
         }
         >p:first-of-type{
@@ -45,8 +48,29 @@ header{
         height: 15vh;
         padding: 0 3vw;
         >div:last-child{
-            > input{
-                display: inline-block;
+            >div:first-of-type{
+                display: flex;
+                align-items: center;
+                width: 30vw;
+                height: 40%;
+                border: white solid 1px;
+                padding: 5px;
+                margin-right: 10px;
+                > input{
+                    height: 100%;
+                    width: 90%;
+                    border: none;
+                    display: inline-block;
+                    background: transparent;
+                    color: white;
+                    &::placeholder{
+                        font-weight: bold;
+                        color: rgba(255, 255, 255, 0.499);
+                    }
+                    &:focus-visible{
+                        outline: none;
+                    }
+                }
             }
             >p:first-of-type{
                 display: flex;
@@ -59,5 +83,14 @@ header{
     }
     #btnSearch{
         display: none;
+    }
+}
+
+/*Media query para impresion*/
+@media print{
+    header{
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        background: red;
     }
 }
