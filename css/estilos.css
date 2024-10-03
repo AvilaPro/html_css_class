@@ -1,40 +1,47 @@
 /*Reglas globales*/
-*{
+* {
     font-family: 'Segoe UI';
 }
-body{
+
+body {
     margin: 0;
 }
 
 /*Fin Reglas globales*/
 
 /*HEADER*/
-header{
+header {
     height: 10vh;
     padding: 0 1vw;
     background: #4618ac;
     color: white;
     display: flex;
     justify-content: space-between;
-    >div{
+
+    >div {
         display: flex;
         align-items: center;
-        > span{
+
+        >span {
             margin: 0 8px;
         }
     }
-    > div:first-child{
+
+    >div:first-child {
         display: flex;
         align-items: center;
-        > img{
+
+        >img {
             height: 70%;
         }
     }
-    >div:last-child{
-        > div:first-child{
+
+    >div:last-child {
+        >div:first-child {
             display: none;
         }
-        >p:first-of-type{
+
+        >p:first-of-type {
             display: none;
         }
     }
@@ -42,13 +49,194 @@ header{
 
 /*FIN HEADER*/
 
+/*NAV*/
+nav {
+    display: flex;
+    height: 7vh;
+    padding: 0 1vw;
+    background: #341281;
+    color: white;
+
+    >div {
+        display: flex;
+        padding: 0 10px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 1.2em;
+        cursor: pointer;
+
+        &:hover {
+            color: rgb(254, 213, 47);
+            background: #1f0b50;
+        }
+    }
+}
+
+/*FIN NAV*/
+/*CAROUSEL*/
+.swiper {
+    background: #4618ac;
+    height: 50vh;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    img {
+        /* width: 100%; */
+        height: 100%;
+    }
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 80%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+
+/*FIN CAROUSEL*/
+
+/*MINIATURAS*/
+#miniaturas{
+    display: flex;
+    height: 25vh;
+    max-width: 100%;
+    background: #4618ac;
+    padding: 0 2vw;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: hidden;
+    > div{
+        height: 80%;
+        aspect-ratio: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        align-items: center;
+    }
+}
+/*FIN MINIATURAS*/
+
+/*RECOMENDADOS*/
+#recomendados{
+    width: 100%;
+    height: auto;
+    background: #4618ac;
+    >h1{
+        height: 20vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 2vw;
+        color: white;
+    }
+    >div:first-of-type{
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        > article{
+            background: #341281;
+            width: 20%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            >img{
+                height: 65%;
+                width: 100%;
+            }
+            >div{
+                padding: 8px;
+                display: flex;
+                flex-direction: column;
+                p{
+                    margin: 0;
+                }
+                .title{
+                    color: white;
+                    font-weight: bold;
+                }
+                .global{
+                    color: #23C285;
+                    font-weight: bold;
+                }
+                span:nth-of-type(2){
+                    color: #8F83A4;
+                }
+                .precio{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 2em;
+                }
+            } 
+        }
+    }
+    >div:last-of-type{
+        display: flex;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+        >button{
+            padding: 10px 7vw;
+            text-align: center;
+            border: white solid 1.5px;
+            background: transparent;
+            color: white;
+            &:hover{
+                background: #1f0b50;
+                cursor: pointer;
+            }
+        }
+    }
+}
+/* FIN RECOMENDADOS */
+
+
 /*MEDIA QUERIES*/
 @media screen and (min-width: 931px) {
-    header{
+    header {
         height: 15vh;
         padding: 0 3vw;
-        >div:last-child{
-            >div:first-of-type{
+
+        >div:last-child {
+            >div:first-of-type {
                 display: flex;
                 align-items: center;
                 width: 30vw;
@@ -56,39 +244,45 @@ header{
                 border: white solid 1px;
                 padding: 5px;
                 margin-right: 10px;
-                > input{
+
+                >input {
                     height: 100%;
                     width: 90%;
                     border: none;
                     display: inline-block;
                     background: transparent;
                     color: white;
-                    &::placeholder{
+
+                    &::placeholder {
                         font-weight: bold;
                         color: rgba(255, 255, 255, 0.499);
                     }
-                    &:focus-visible{
+
+                    &:focus-visible {
                         outline: none;
                     }
                 }
             }
-            >p:first-of-type{
+
+            >p:first-of-type {
                 display: flex;
                 align-items: center;
             }
         }
     }
-    #btnMenu{
+
+    #btnMenu {
         display: none;
     }
-    #btnSearch{
+
+    #btnSearch {
         display: none;
     }
 }
 
 /*Media query para impresion*/
-@media print{
-    header{
+@media print {
+    header {
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
         background: red;
