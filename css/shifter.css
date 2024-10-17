@@ -1,0 +1,104 @@
+/* X-Small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+.container{
+    display: flex;
+    >div{
+        width: 100%;
+    }
+    flex-wrap:wrap;
+}
+
+.c1{
+    background-color: red;
+    height: 70vh;
+    order: 3;
+}
+.c2{
+    order: 2;
+}
+.c21{
+    background-color: lightblue;
+    height: 35vh;
+    width: 100%;
+}
+.c22{
+    background-color: green;
+    height: 35vh;
+    width: 100%;
+}
+.c3{
+    background-color: purple;
+    height: 70vh;
+    order: 1;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .container{
+        flex-wrap: wrap;
+    }
+    .c1{
+        order: 3 !important;
+        width: 100%;
+    }
+    .c3{
+        order: 1 !important;
+        width: 50% !important;
+    }
+    .c2{
+        order: 2 !important;
+        width: 50% !important;   
+    }
+ }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    .container{
+        flex-wrap: nowrap;
+    }
+    .c1{
+        order: 1 !important;
+        width: 25% !important;
+    }
+    .c2{
+        width: 50%;
+        order: 2;
+    }
+    .c3{
+        width: 25% !important;
+        order: 3 !important;
+    }
+ }
+
+/*Bloque*/
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*Elemento*/
+    &.__img{
+
+    }
+    &.__nav{
+        &.__a{
+            text-decoration: none;
+        }
+        /*Modificador*/
+        &.--aRed{
+            color: red;
+        }
+        &.--aBlue{
+            color: blue;
+        }
+    }
+ }

@@ -2,3 +2,6 @@ img/
 audio/
 videos/
 fonts/
+node_modules/
+package-lock.json
+package.json

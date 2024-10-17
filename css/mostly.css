@@ -1,0 +1,75 @@
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c1{
+    background-color: #1221c0;
+}
+.c2{
+    background-color: #be009e;
+}
+.c3{
+    background-color: #fe0071;
+}
+.c4{
+    background-color: #ff704d;
+}
+.c5{
+    background-color: #ffb944;
+}
+
+.c1, .c2, .c3, .c4, .c5 {
+  width: 100%;
+  height: 60vh;
+}
+
+@media (min-width: 600px) {
+  .c2, .c3, .c4, .c5 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .c1 {
+    width: 60%;
+  }
+  .c2 {
+    width: 40%;
+  }
+  /* Using 33.33%, doesn't always work right due to rounding */
+  .c3, .c4 {
+    width: 33%;
+  }
+  .c5 {
+    width: 34%;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {  }
