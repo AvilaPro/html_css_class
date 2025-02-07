@@ -1,61 +1,162 @@
+body{
+  margin: 0;
+  font-family: 'Segoe UI';
+}
 /*HEADER*/
-header{
-    /*vh: viewport height*/
-    height: 20vh;
+header {
+  /*vh: viewport height*/
+  height: 20vh;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
 }
+
 #div1header {
-    padding: 0 5%;
-    height: 49%;
-    /* background: lightgoldenrodyellow; */
+  padding: 0 5%;
+  height: 49%;
+  /* background: lightgoldenrodyellow; */
 }
-.el-div1header{
-    float: left;
+
+.el-div1header {
+  float: left;
+  display: inline-block;
+  /* background: lightblue; */
+  height: 100%;
+  margin: 0 0.3%;
+  padding: 25px 0 0 0;
+  box-sizing: border-box;
+
+  >p {
     display: inline-block;
-    /* background: lightblue; */
-    height: 100%;
-    margin: 0 0.3%;
-    padding: 25px 0 0 0;
-    box-sizing: border-box;
-    >p{
-        display: inline-block;
-        margin: 0;
-        width: 18%;
-    }
-    > div{
-        display: inline-block;
-        width: 78%;
-        > div{
-            font-size: x-small;
-        }
-    }
-}
-#figureHeader{
-    width: 13%;
     margin: 0;
-    > img{
-        width: 100%;
-        height: 70%;
+    width: 18%;
+  }
+
+  >div {
+    display: inline-block;
+    width: 78%;
+
+    >div {
+      font-size: x-small;
     }
+  }
 }
-#div1h{
-    width: 42%;
-    input{
-        width: 90%;
-        height: 60%;
-        border-radius: 18px;
-        padding: 0 18px;
+
+#figureHeader {
+  width: 13%;
+  margin: 0;
+
+  >img {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+#div1h {
+  width: 42%;
+
+  input {
+    width: 90%;
+    height: 60%;
+    border-radius: 18px;
+    padding: 0 18px;
+  }
+}
+
+#div2h {
+  width: 10%;
+}
+
+#div3h {
+  width: 7%;
+}
+
+#div4h {
+  width: 14%;
+}
+
+#div5h {
+  width: 8%;
+}
+/*div 2 Header*/
+#div2header{
+  padding: 12px 5%;
+  position: relative;
+  > .btnDiv2Header{
+    padding: 8px 16px;
+    border-radius: 18px;
+    width: fit-content;
+    display: inline-block;
+    &:hover{
+      cursor: pointer;
     }
-}
-#div2h{
-    width: 10%;
-}
-#div3h{
-    width: 7%;
-}
-#div4h{
-    width: 14%;
-}
-#div5h{
-    width: 8%;
+  }
+  >div:first-child{
+    background: lightgray;
+    position: relative;
+    left: 0;
+  }
+  >div:nth-child(2){
+    color: red;
+    font-weight: bold;
+  }
+  >div:nth-child(8){
+    float: right;
+    position: relative;
+    &:hover{
+      >div{
+        transform: scale(1);
+        box-shadow: 0 0 8px 1px lightslategray;
+      }
+    }
+    >div{
+      transition: all 0.5s ease 0s;
+      position: absolute;
+      top: 70px;
+      left: -75px;
+      border-radius: 10px;
+      background: white;
+      padding: 18px;
+      transform: scale(0);
+      width: max-content;
+      >div{
+        margin: 7px;
+        font-size: 12px;
+        width: fit-content;
+      }
+    }
+  }
+  >.btnInternos{
+    margin-left: 30px;
+  }
+  .btnNobgHeader:hover{
+    background-color: rgb(233, 230, 230);
+  }
 }
 /*FIN HEADER*/
+/*BANNER*/
+#banner{
+  height: 1500px;
+  background: lightpink;
+}
+/*FIN BANNER*/
+/*BTNSFLOTANTES*/
+#btnsFlotantes{
+  max-width: 40px;
+  >div{
+    text-align: center;
+    margin: 7px;
+  }
+  & ion-icon{
+    color: black;
+    font-size: 30px;
+  }
+  height: fit-content;
+  position: fixed;
+  right: 0;
+  bottom: 5%;
+  background: white;
+  padding: 15px 0;
+}
+/*FIN BTNSFLOTANTES*/
