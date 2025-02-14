@@ -135,12 +135,113 @@ header {
   }
 }
 /*FIN HEADER*/
-/*BANNER*/
-#banner{
-  height: 1500px;
-  background: lightpink;
+/*OFERTAS*/
+#ofertas{
+  height: 70vh;
+  /* background: lightblue; */
+  padding: 0 5%;
+  & > h1{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  & > div{
+    height: 90%;
+    /* background: lightcoral; */
+    & article{
+      height: 100%;
+      width: 47%;
+      display: inline-block;
+      padding: 0 2.5%;
+      box-sizing: border-box;
+      border: solid 1.5px lightgrey;
+      &:hover{
+        background-color: lightgray;
+      }
+      & h4{
+        text-align: center;
+        & + div{
+          margin: 0 auto;
+          width: 35%;
+          border-radius: 15px;
+          background: rgba(255, 182, 193, 0.627);
+          height: 7%;
+          text-align: center;
+          padding-top: 5px;
+          box-sizing: border-box;
+          font-weight: 600;
+        }
+      }
+      /*carousel Card*/
+      & > div:last-child{
+        height: 67%;
+        margin-top: 4%;
+        /* background: rgb(140, 140, 241); */
+        /*card*/
+        & > div{
+          background: white;
+          width: 32%;
+          height: 100%;
+          display: inline-block;
+          margin: 0 0.002%;
+          /* background: rgb(15, 72, 141); */
+          padding: 1%;
+          box-sizing: border-box;
+          & > img{
+            width: 100%;
+            height: 50%;
+          }
+          & > p{
+            margin: 0;
+            &:first-of-type{
+              height: 20%;
+              font-weight: 500;
+            }
+            &:nth-child(3){
+              height: 10%;
+              font-size: 1.2em;
+            }
+            &:nth-child(4){
+              height: 10%;
+              font-size: 1em;
+              text-decoration: line-through;
+            }
+          }
+          & > span{
+            display: inline-block;
+            background-color: rgb(236, 55, 55);
+            text-align: center;
+            padding: 3px;
+            font-weight: 600;
+            min-width: 20%;
+            height: 8%;
+            box-sizing: border-box;
+            color: white;
+          }
+          &:first-child{
+            float: left;
+          }
+          &:nth-child(2){
+            position: relative;
+            left: 1.99%;
+          }
+          &:last-child{
+            float: right;
+          }
+        }
+      }
+      &:first-child{
+        /* background: lightsalmon; */
+      }
+      &:last-child{
+        /* background: lime; */
+        float: right;
+      }
+    }
+
+  }
 }
-/*FIN BANNER*/
+/*FIN OFERTAS*/
 /*BTNSFLOTANTES*/
 #btnsFlotantes{
   max-width: 40px;
