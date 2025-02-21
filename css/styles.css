@@ -135,6 +135,17 @@ header {
   }
 }
 /*FIN HEADER*/
+/*BANNER*/
+#banner{
+  height: 27vh;
+  /* background-color: aliceblue; */
+  background-image: url("https://ae-pic-a1.aliexpress-media.com/kf/Sb900db0ad7604a83b297a51d9222905bm/624x160.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: 10% 50%; */
+  /* object-fit: ; */
+}
+/*FIN BANNER*/
 /*OFERTAS*/
 #ofertas{
   height: 70vh;
@@ -155,8 +166,21 @@ header {
       padding: 0 2.5%;
       box-sizing: border-box;
       border: solid 1.5px lightgrey;
+      &:first-of-type{
+        border-radius: 10px 58px 5px;
+        /* box-shadow: 0 5px 20px 3px rgb(244, 145, 145); */
+        background: transparent;
+        /* transform: rotate(70deg); */
+        /* transform: skew(10deg, 5deg); */
+        /* transform: scale(0.5); */
+        /* transform: translate(150px, -50px); */
+        transition: all 2s cubic-bezier(.31,.74,.87,.01) 0s;
+      }
       &:hover{
+        transform: scale(0.5) translate(150px, -150px);
         background-color: lightgray;
+        border: solid rgba(236, 55, 55, 0.5) 0.7px;
+        box-shadow: 0 5px 20px 10px rgb(244, 145, 145);
       }
       & h4{
         text-align: center;
