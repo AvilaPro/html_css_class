@@ -1,0 +1,8 @@
+audio/
+fonts/
+img/
+js/
+node_modules/
+videos/
+package.json
+package-lock.json
